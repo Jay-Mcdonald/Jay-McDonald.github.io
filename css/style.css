@@ -1,0 +1,306 @@
+img{
+	width: 100%;
+}
+
+.text
+{
+	font-size: 30px;
+	color: red;
+	position: absolute;
+	top: 12%;
+	left: 23%;
+	-webkit-animation: textGlow 1000ms infinite;
+}
+
+.toggleText
+{
+	font-size: 30px;
+	position: absolute;
+	bottom: 870px;
+}
+
+.buttonLeft
+{
+	background-color: blueviolet;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 28px;
+	position: absolute;
+	left: 5%;
+	top:65%;
+	outline: none;
+}
+
+.buttonLeft:disabled
+{
+	opacity: 50%;
+}
+.buttonLeft:disabled:hover
+{
+	background-color: blueviolet;
+	color: white;
+	opacity: 50%;
+	cursor: not-allowed;
+}
+
+.buttonLeft:hover
+{
+	background-color: darkmagenta;
+	color: black;
+	cursor: pointer;
+}
+
+.buttonLeft:active
+{
+	 box-shadow: 0 0 50px blueviolet;
+}
+
+.buttonRight
+{
+	background-color: blueviolet;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 28px;
+	position: absolute;
+	left: 10%;
+	top:65%;
+	outline: none;
+}
+
+.buttonRight:disabled
+{
+	opacity: 50%;
+}
+
+.buttonRight:disabled:hover
+{
+	background-color: blueviolet;
+	color: white;
+	cursor: not-allowed;
+	
+}
+
+.buttonRight:hover
+{
+	background-color: darkmagenta;
+	color: black;
+	cursor: pointer;
+}
+
+.buttonRight:active
+{
+	 box-shadow: 0 0 50px blueviolet;
+}
+
+.buttonDown
+{
+	background-color: blueviolet;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 28px;
+	position: absolute;
+	left:7%;
+	top:70%;
+	outline: none;
+}
+
+.buttonDown:disabled
+{
+	opacity: 50%;
+	cursor: not-allowed;
+}
+
+.buttonDown:disabled:hover
+{
+	background-color: blueviolet;
+	color: white;
+	cursor: not-allowed;
+}
+
+.buttonDown:hover
+{
+	background-color: darkmagenta;
+	color: black;
+	cursor: pointer;
+}
+
+.buttonDown:active
+{
+	 box-shadow: 0 0 50px blueviolet;
+}
+
+.buttonUp
+{
+	background-color: blueviolet;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 28px;
+	position: absolute;
+	left:8.5%;
+	top:60%;
+	outline: none;
+}
+
+.buttonUp:disabled
+{
+	opacity: 50%;
+	cursor: not-allowed;
+}
+
+.buttonUp:disabled:hover
+{
+	background-color: blueviolet;
+	color: white;
+	cursor: not-allowed;
+}
+
+.buttonUp:hover
+{
+	background-color: darkmagenta;
+	color: black;
+	cursor: pointer;
+}
+
+.buttonUp:active
+{
+	 box-shadow: 0 0 50px blueviolet;
+}
+
+.linkButton
+{
+	background-color: red;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	left:30%;
+	top: 20%;
+	-webkit-animation: glowing 1500ms infinite;
+}
+
+.linkButton:hover
+{
+	color: yellow;
+}
+
+.switch
+{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	bottom: 850px;
+}
+
+.switch input
+{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider
+{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 34px;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before
+{
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	border-radius: 50%;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider
+{
+	background-color: aqua;
+}
+
+input:focus + .slider
+{
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before
+{
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateY(26px);
+	transform: translateX(26px);
+}
+
+@keyframes glowing
+{
+	0%
+	{
+		background-color: red;
+		box-shadow: 0 0 3px red;
+	}
+	50%
+	{
+		background-color: red;
+		box-shadow: 0 0 40px red;
+	}
+	100%
+	{
+		border-color: red;
+		box-shadow: 0 0 3px red;
+	}
+}
+
+@keyframes textGlow
+{
+	0%
+	{
+		color: red;
+	}
+	50%
+	{
+		color: yellow;
+	}
+	100%
+	{
+		color: red;
+	}
+	
+}
+
+.custom-select
+{
+	top: 10px;
+	left: 500px;
+	position: absolute;
+}
+
+select
+{
+	width: 200px;
+	padding: 5px 5px 5px;
+	font-size: 16px;
+	border: 1px solid #C0C0C0;
+	height: 34px;
+	cursor: pointer;
+	-webkit-appearance: none;
+}

@@ -3,6 +3,19 @@
 // In JavaScript you can consider everything an Object
 // including functions
 
+function onPageLoad()
+{
+	splitFunction();
+}
+
+function splitFunction()
+{
+	var url = window.location.search;
+	console.log();
+	var result = url.split("=");
+	document.getElementById("myGamerTag").innerHTML = result[1];
+}
+
 function moveright()
 {
 	//x = x += 5;

@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Test Form</title>
+<title>Game Login</title>
 </head>
-<body>
+<body onLoad="onPageLoad()">
 
-<form action="https://jay-mcdonald.github.io/GameLoop.html" method="GET" target="_blank">
-
-<label for="username"><b>Username:</b></label>	
-<input type="text" id="username" name="username"><br><br>
-
-	<label for="password"><b>Password:</b></label>
-<input type="password" id="password" name="password">
-<br>
-
-<!--<input type="radio" name="enemy" value="npc">NPC<br>
-<input type="radio" name="enemy" value="boss" checked>Boss
-<br>
-
-<input type="hidden" name="wallet" value="phil">
-
-<select name="enemy_color">​
-    <option value="Red">red</option>​
-    <option value="Green">green</option>​
-    <option value="BLUE">blue</option>​
-</select>-->
-<br>
-
-<button type="reset">Reset</button><br><br>
-<button type="submit">Submit</button>
-
-</form>
+	<form name="gamerTagForm" action="https://jay-mcdonald.github.io/index.html", method="get">
+		<label for="username"><b>Username:</b></label>	
+		<input type="text", value="", name="GamerTag"><br><br>
+		<label for="username"><b>Password:</b></label>	
+		<input type="password", value="", name="Password"><br><br>
+		<button type="submit">Submit</button>
+	</form>
+	
+	<script>
+		function onPageLoad()
+		{
+			var href = window.location.href;
+			var proctocol = window.location.protocol;
+			var host = window.location.host;
+			var pathname = window.location.pathname;
+			var search = window.location.search;
+		}
+	</script>
 
 </body>
 </html>

@@ -11,7 +11,7 @@ function onPageLoad()
 function splitFunction()
 {
 	var url = window.location.search;
-	console.log();
+	console.log(url);
 	var result = url.split("=");
 	document.getElementById("myGamerTag").innerHTML = result[1];
 }
